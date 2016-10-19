@@ -1,20 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Lineup Card</title>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-	</head>
+
+	<meta charset="UTF-8">
+
+	<title>Play Ball!</title>
+
+<!-- BOOTSTRAP CDN -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!-- JQUERY CDN -->
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+<!-- STYLESHEETS -->
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">	
+	<link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+
 <body>
 
-<div class="container">
+	<div class="container">
 
-	<div class="row">
+		<!-- NAVBAR WITH LOGO -->
 
-		<!-- LINEUP CARD BEGIN-->
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="navbar">
+			<img src="../assets/images/logo.png" alt="logo">
+			</div>
+		</div>
 
-		<div class="col-md-4" id="lineupCard">
+		<div class="row">
+
+			<!-- EMPTY COLUMN -->
+
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+			</div>
+
+			<!-- ENTER YOUR LINEUP -->
+
+			<div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+				<h1>
+					Choose Your Opponent
+				</h1>
+				<p>
+					Any good rivalry starts with the right opponent. Select who you will play by clicking on one of the teams below, then click the submit button to continue.
+				</p>
+				
+				<div class="row">
+				<div id="rivalsLeft" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<button class="rivalTeamsdark" id="1970orioles">
+						<p class="rivalName">1970 Baltimore Orioles</p>
+					</button>
+
+					<button class="rivalTeamslight" id="1961yankees">
+						<p class="rivalName">1961 New York Yankees</p>
+					</button>
+
+					<button class="rivalTeamsdark" id="2014giants">
+						<p class="rivalName">2014 San Francisco Giants</p>
+					</button>
+
+					<button class="rivalTeamslight" id="1907cubs">
+						<p class="rivalName">1907 Chicago Cubs</p>
+					</button>
+				</div>
+
+				<div id="rivalsRight" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<button class="rivalTeamsdark" id="1939yankees">
+						<p class="rivalName">1939 New York Yankees</p>
+					</button>
+
+					<button class="rivalTeamslight" id="1929athletics">
+						<p class="rivalName">1929 Philadelphia Athletics</p>
+					</button>
+
+					<button class="rivalTeamsdark" id="1976reds">
+						<p class="rivalName">1976 Cincinatti Reds</p>
+					</button>
+
+					<button class="rivalTeamslight" id="1996braves">
+						<p class="rivalName">1996 Atlanta Braves</p>
+					</button>
+				</div>
+				</div>
+
+				<form action="" method="POST" role="form">
+					<button type="submit" class="btn">Submit Team</button>
+				</form>
+			</div>
+
+
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
+
+			<!-- LINEUP CARD BEGIN-->
+
+		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" id="lineupCard">
 
 			<!-- LINEUP HEADER -->
 
@@ -172,9 +259,15 @@
 
 		<!-- LINEUP CARD END -->
 
+		<!-- EMPTY COLUMN -->
+
+			<div class="col-xs-1 col-sm-1 col-md-1 col-lg-1">
+			</div>
+
+		</div>
+
 	</div>
-
-</div>
-
+		
 </body>
+
 </html>
